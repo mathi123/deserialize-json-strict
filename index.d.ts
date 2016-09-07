@@ -1,2 +1,2 @@
-/// <reference path="deserializable.ts" />
-/// <reference path="deserialize-util.ts" />
+export * from "./deserializable";
+export * from "./deserialize-util";

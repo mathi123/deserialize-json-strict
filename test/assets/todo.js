@@ -6,15 +6,12 @@ var Todo = (function () {
         this.description = "";
         this.isDone = false;
     }
-    Todo.prototype.toString = function () {
-        return this.description;
-    };
-    Todo.prototype.deserialize = function (values) {
-        this.id = deserialize_util_1.DeserializeUtil.StrictNumber(values.id);
-        this.description = deserialize_util_1.DeserializeUtil.StrictString(values.description);
-        this.isDone = deserialize_util_1.DeserializeUtil.StrictBoolean(values.isDone);
+    Todo.prototype.deserialize = function (obj) {
+        this.id = deserialize_util_1.DeserializeUtil.StrictNumber(obj.id);
+        this.description = deserialize_util_1.DeserializeUtil.StrictString(obj.description);
+        this.isDone = deserialize_util_1.DeserializeUtil.StrictBoolean(obj.isDone);
     };
     return Todo;
 }());
 exports.Todo = Todo;
-//# sourceMappingURL=Todo.js.map
+//# sourceMappingURL=todo.js.map
