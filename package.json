@@ -4,7 +4,7 @@
   "description": "Deserialize Json throwing errors on null or undefined properties.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
